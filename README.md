@@ -1,4 +1,7 @@
 # RHCSA 9 Vagrant Practise lab
+
+![screenshot](https://github.com/gitmpr/rhcsa9vagrant/blob/main/screenshot/Screenshot%20from%202023-04-06%2022-24-00.png?raw=true)
+
 Vagrant lab for practising for the rhcsa 9. It was mentioned on the Red Hat Slack that RHEL9.0 is used on the latest RHCSA exam, 
 not the 9.1 release. So the vagrant box is pinned to the older version
 https://join.slack.com/t/redhat-certs/shared_invite/zt-1ss7ia1sk-Hn3mMGPRaJIfKbiYP89ZoA
