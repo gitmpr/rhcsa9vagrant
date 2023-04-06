@@ -1,0 +1,9 @@
+session_name: rhcsa9vagrant
+windows:
+- window_name: rhcsa9vagrant
+  layout: main-horizontal
+  main-pane-height: 25%
+  panes:
+  - "vagrant up"
+  - "vagrant ssh anode"
+  - "vagrant ssh cathode"
