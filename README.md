@@ -12,19 +12,17 @@ https://join.slack.com/t/redhat-certs/shared_invite/zt-1ss7ia1sk-Hn3mMGPRaJIfKbi
 
 - install virtualbox
 - install vagrant
-- run the following command inside this directory:
-
-
-    vagrant up
-
+- run `vagrant up` inside this directory
+    
 The vagrant script will set up two RHEL9.0 VMs: anode and cathode. 
 anode will mount the dvd iso and use this for its own repo to use.
 It will also run an Apache web server serving the BaseOS and AppStream repos which are used by the cathode VM.
 
 In two separate terminals you want to execute the following commands to ssh into the boxes
 
-    vagrant ssh anode
-    vagrant ssh cathode
+`vagrant ssh anode`
+
+`vagrant ssh cathode`
 
 
 or use the following multiline command to create a tmux session:
@@ -39,10 +37,7 @@ or use the following multiline command to create a tmux session:
 
 
 or use the tmuxp file:
-
-    tmuxp load tmuxp/rhcsa9vagrant.yaml
-
-
+`tmuxp load tmuxp/rhcsa9vagrant.yaml`
 
 TODO
 - This has only been tested on Arch linux. For windows/mac you might need to use different IDE controller names for virtualbox
@@ -51,10 +46,10 @@ TODO
 
 - tmuxp config
 
-- uefi rhel9.0
+- UEFI install
 
 - ftp yum repo
 
 - lvm config disable device file
 https://www.burakkurc.com.tr/en/2023/01/29/rhel-9-lvm-devices-file-sys_wwid-nvme-pvid-last-seen-on-not-found/
-sudo sed -i 's/use_devicesfile = 1/use_devicesfile = 0/g' /etc/lvm/lvm.conf
+`sudo sed -i 's/use_devicesfile = 1/use_devicesfile = 0/g' /etc/lvm/lvm.conf`
